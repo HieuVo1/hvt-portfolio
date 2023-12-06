@@ -1,0 +1,44 @@
+<div class="navbar" [ngClass]="{'show-fixed':isScrollUp}">
+  <div class="container">
+    <div nz-row class="header">
+      <!-- <div nz-col [nzXl]="0" [nzLg]="0" [nzMd]="6" [nzSm]="6" [nzXs]="6">
+        <div class="push-menu flex al-center">
+          <i class="text-hover" (click)="openMenu()" [nzRotate]="180" nz-icon>
+            <svg>
+              <path
+                d="M127.9 168.9h768v46h-768z m-0.7 640.2h768v46h-768z m280.9-313.6h488.7v46H408.1z m-90.5-149.2L130.1 522.6l187.5 176.3V346.3z m-46 246.2l-74.3-69.9 74.3-69.9v139.8z"
+                p-id="23275" data-spm-anchor-id="a313x.7781069.0.i27" class="selected"></path>
+            </svg>
+          </i>
+        </div>
+      </div> -->
+      <div nz-col [nzXl]="6" [nzLg]="6" [nzMd]="12" [nzSm]="12" [nzXs]="12">
+        <div class="logo flex al-center">
+          <img (click)="scrollTo('about')" height="70" src="assets/images/logo.png" alt="">
+        </div>
+      </div>
+      <div nz-col [nzXl]="12" [nzLg]="12" [nzMd]="0" [nzSm]="0" [nzXs]="0" class="navigation-options">
+        <ul class="flex jc-center">
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'about'}"
+            (click)="scrollTo('about')">About
+          </li>
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'skills'}"
+            (click)="scrollTo('skills')">Skills
+          </li>
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'projects'}"
+            (click)="scrollTo('projects')">Projects</li>
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'resume'}"
+            (click)="scrollTo('resume')">
+            Resume</li>
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'certificates'}"
+            (click)="scrollTo('certificates')">
+            Certificates</li>
+          <li class="text-hover flex al-center" [ngClass]="{'active':currentComponent === 'contact'}"
+            (click)="scrollTo('contact')">
+            Contact
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

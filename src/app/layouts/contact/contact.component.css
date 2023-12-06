@@ -1,0 +1,49 @@
+.google-map {
+  padding-right: 30px !important;
+}
+
+.contact-form {
+  padding-left: 30px !important;
+}
+
+.contact-form .title {
+  color: #353535;
+  font-size: 2.4em;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.contact-form input {
+  height: 40px;
+}
+
+.submit-contact {
+  width: 100%;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #474559;
+  height: 40px;
+  padding: 6.4px 20px;
+  border-color: #474559;
+  transition: all 0.4s ease;
+  font-size: 15px;
+  transition: all 0.4s ease;
+}
+
+.submit-contact:hover {
+  background: #ffc200;
+  border-color: #ffc200;
+  color: #ffffff !important;
+}
+
+.ant-input-focused,
+.ant-input:focus {
+  border-color: #fae4a3;
+  box-shadow: 0 0 0 2px rgb(217 255 24 / 20%);
+  border-right-width: 1px;
+  outline: 0;
+}
+
+.ant-input:hover {
+  border-color: #fae4a3;
+}

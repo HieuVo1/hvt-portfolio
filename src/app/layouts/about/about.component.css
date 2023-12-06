@@ -1,0 +1,115 @@
+.about {
+  padding-top: 8rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.small-text {
+  color: #5b5b5b;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  color: #212121;
+  font-size: 2.8em;
+  margin: 24px 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+
+.custom-btn {
+  padding: 12px 35px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #474559;
+  border-color: #474559;
+  transition: all 0.4s ease;
+}
+
+.custom-btn:hover {
+  background: #ffc200;
+  color: #ffffff !important;
+}
+
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  min-width: 280px;
+  position: relative;
+}
+
+.animated-item {
+  font-size: 38px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+.animated-item {
+  color: #ffc200;
+}
+
+.animated-item:nth-child(2n + 2) {
+  animation-delay: 2s;
+}
+
+.animated-item:nth-child(3n + 3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

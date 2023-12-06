@@ -1,0 +1,51 @@
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="content" [nzGutter]="24" nz-row>
+      <div class="google-map" nz-col [nzMd]="12" [nzXs]="24">
+        <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6UInsyomdTERphYSbkxdgLM&key=AIzaSyA-aipuGDV9eo-DfK2WmCuyPoJGeDqM23I"></iframe>
+      </div>
+      <div class="contact-form" nz-col [nzMd]="12" [nzXs]="24">
+        <h2 class="title">Interested to work together? Let's talk</h2>
+        <form [nzLayout]="'vertical'" nz-form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+          <!-- name -->
+          <nz-form-item>
+            <nz-form-label nzSpan="10" nzRequired nzFor="name">Your Name:</nz-form-label>
+            <nz-form-control nzSpan="24" nzErrorTip="The input is not valid Name!">
+              <input nz-input formControlName="name" />
+            </nz-form-control>
+          </nz-form-item>
+
+          <!-- email -->
+          <nz-form-item>
+            <nz-form-label nzSpan="10" nzRequired nzFor="email" email>Your Email:</nz-form-label>
+            <nz-form-control nzSpan="24" nzErrorTip="The input is not valid E-mail!">
+              <input nz-input formControlName="email" />
+            </nz-form-control>
+          </nz-form-item>
+
+          <!-- phone -->
+          <nz-form-item>
+            <nz-form-label nzSpan="10" nzFor="phone" phone>Your Phone:</nz-form-label>
+            <nz-form-control nzSpan="24" nzErrorTip="The input is not valid Phone!">
+              <input nz-input formControlName="phone" />
+            </nz-form-control>
+          </nz-form-item>
+
+          <!-- message -->
+          <nz-form-item>
+            <nz-form-label nzSpan="10" nzRequired nzFor="message">Your Message:</nz-form-label>
+            <nz-form-control nzSpan="24" nzErrorTip="The input is not valid Message!">
+              <textarea rows="8" nz-input formControlName="content"></textarea>
+            </nz-form-control>
+          </nz-form-item>
+          <!-- submit button -->
+          <button nzShape="round" [nzLoading]="isLoading" nzSize="large" nz-button class="submit-contact"
+            [nzType]="'primary'">Send
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
