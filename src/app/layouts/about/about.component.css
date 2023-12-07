@@ -1,5 +1,5 @@
 .about {
-  padding-top: 8rem;
+  padding-top: 130px;
 }
 
 .img-fluid {
@@ -15,17 +15,15 @@
   letter-spacing: 0.2px;
 }
 
-h1 {
+.animated-text {
   color: #212121;
-  font-size: 2.8em;
+  font-size: 45px;
   margin: 24px 0;
   font-weight: bold;
 }
 
-p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.5;
+.introduce-text {
+  font-size: 17px;
   color: #5b5b5b;
 }
 
@@ -43,9 +41,8 @@ p {
   color: #ffffff !important;
 }
 
-.mr-2,
-.mx-2 {
-  margin-right: 0.5rem !important;
+.animated-default {
+  margin-right: 8px !important;
 }
 
 .animated-info {
@@ -57,6 +54,7 @@ p {
 }
 
 .animated-item {
+  color: #ffc200;
   font-size: 38px;
   line-height: inherit;
   display: block;
@@ -69,21 +67,16 @@ p {
   animation: BottomTotop 6s linear infinite 0s;
 }
 
-.mt-4,
-.my-4 {
-  margin-top: 1.5rem !important;
-}
-
-.animated-item {
-  color: #ffc200;
-}
-
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
 
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
+}
+
+.custom-btn-group {
+  margin-top: 24px !important;
 }
 
 @keyframes BottomTotop {
@@ -124,6 +117,6 @@ p {
   }
 
   .about {
-    padding-top: 6rem;
+    padding-top: 100px;
   }
 }

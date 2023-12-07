@@ -23,7 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { ProjectsComponent } from './layouts/projects/projects.component';
-import { ExperiencesComponent } from './layouts/experiences/experiences.component';
+import { ResumeComponent } from './layouts/resume/resume.component';
 import { ContactComponent } from './layouts/contact/contact.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { MenuDrawerComponent } from './layouts/menu-drawer/menu-drawer.component';
@@ -39,7 +39,7 @@ registerLocaleData(en);
     SkillsComponent,
     CertificatesComponent,
     ProjectsComponent,
-    ExperiencesComponent,
+    ResumeComponent,
     ContactComponent,
     FooterComponent,
     MenuDrawerComponent

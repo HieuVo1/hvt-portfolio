@@ -1,25 +1,8 @@
-<section class="section skills" id="skills">
+<section class="section skills " id="skills">
   <div class="container">
     <h2 class="section-title">Skills</h2>
     <ul class="skills-list">
-      <li class="skills-list-item btn btn--plain">HTML</li>
-      <li class="skills-list-item btn btn--plain">CSS</li>
-      <li class="skills-list-item btn btn--plain">JavaScript</li>
-      <li class="skills-list-item btn btn--plain">TypeScript</li>
-      <li class="skills-list-item btn btn--plain">Angular</li>
-      <li class="skills-list-item btn btn--plain">Ng-Zorro</li>
-      <li class="skills-list-item btn btn--plain">.NET</li>
-      <li class="skills-list-item btn btn--plain">EF Core</li>
-      <li class="skills-list-item btn btn--plain">SQL Server</li>
-      <li class="skills-list-item btn btn--plain">Microservices</li>
-      <li class="skills-list-item btn btn--plain">RabbitMQ</li>
-      <li class="skills-list-item btn btn--plain">Redis</li>
-      <li class="skills-list-item btn btn--plain">Git</li>
-      <li class="skills-list-item btn btn--plain">CI/CD</li>
-      <li class="skills-list-item btn btn--plain">Kubernetes</li>
-      <li class="skills-list-item btn btn--plain">Docker</li>
-      <li class="skills-list-item btn btn--plain">AWS</li>
-      <li class="skills-list-item btn btn--plain">Azure</li>
+      <li *ngFor="let skill of skills" class="skills-list-item btn btn--plain">{{skill}}</li>
     </ul>
   </div>
 </section>

@@ -43,37 +43,20 @@
   color: #ffc107;
 }
 
-.navigation-options ul li,
-.icon-btns ul li {
+.navigation-options ul li {
   height: 70px;
   outline: none;
 }
 
-.icon-btns ul li {
-  padding: 0 10px;
-}
-
-.icon-btns ul li i {
-  font-size: 19px;
-}
-
-.user-option li {
-  font-family: "Raleway", sans-serif;
-}
-
 @media (max-width: 1200px) {
+  .header {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 992px) {
   .header .logo {
     justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .icon-btns ul li:nth-child(1),
-  .icon-btns ul li:nth-child(3) {
-    display: none;
   }
 }
 

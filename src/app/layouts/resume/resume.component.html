@@ -1,0 +1,42 @@
+<section class="resume section flex jc-center al-center" id="resume">
+  <div class="container">
+    <div nz-row>
+      <div class="flex experiences" nz-col [nzLg]="12" [nzXs]="24">
+        <div class="title">
+          <h2 class="section-title">Experiences</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-wrapper" *ngFor="let experience of experiences">
+            <div class="timeline-yr">
+              <span>{{experience.startDate | date: 'y'}}</span>
+            </div>
+            <div class="timeline-info">
+              <h3><span>{{experience.jobTitle}}<small>{{experience.companyName}}</small></span></h3>
+              <p>{{experience.startDate | date: 'mediumDate'}} - {{experience.endDate.getFullYear() >
+                toDate.getFullYear() ?'Present':experience.endDate | date: 'mediumDate'}}</p>
+              <div class="job-description">
+                <p *ngFor="let jobDescription of experience.jobDescription">{{jobDescription}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="educations flex" nz-col [nzLg]="12" [nzXs]="24">
+        <div class="title">
+          <h2 class="section-title">Educations</h2>
+        </div>
+        <div class="timeline" *ngFor="let education of educations">
+          <div class="educations-logo">
+            <img height="70px" [src]="education.logo" alt="Logo">
+          </div>
+          <div class="timeline-info">
+            <h3>{{education.schoolName}}</h3>
+            <h4 class="major">{{education.major}}</h4>
+            <p>{{education.startDate | date:'mediumDate'}} - {{education.endDate | date:'mediumDate'}}</p>
+            <p>{{education.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
