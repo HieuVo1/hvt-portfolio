@@ -23,3 +23,23 @@ jobs:
 
       - name: Run Build
         run: npm run build-prod
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Setup Node Js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependency
+        run: npm ci
+
+      - name: Run Build
+        run: npm run build-prod
+
+      - name: Deploy
+        run: ls .\dist\
