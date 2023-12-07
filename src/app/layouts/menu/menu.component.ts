@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { DrawerService } from 'src/app/drawer.service';
 
 @Component({
   selector: 'app-menu',
@@ -9,6 +10,8 @@ export class MenuComponent {
   isScrollUp: boolean = false;
   prevPosition = 0;
   currentComponent: string = 'about';
+
+  constructor(private readonly drawerService: DrawerService) { }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
@@ -35,5 +38,9 @@ export class MenuComponent {
       block: "center",
       inline: "center"
     });
+  }
+
+  openMenu() {
+    this.drawerService.menuDrawerVisibleEvent(true);
   }
 }

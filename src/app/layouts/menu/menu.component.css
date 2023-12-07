@@ -68,18 +68,9 @@
   .header .logo {
     justify-content: center;
   }
-
-  .container {
-    max-width: 900px;
-  }
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
   .icon-btns ul li:nth-child(1),
   .icon-btns ul li:nth-child(3) {
     display: none;

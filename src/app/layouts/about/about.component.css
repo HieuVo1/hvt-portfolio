@@ -113,3 +113,17 @@ p {
     opacity: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .about-text {
+    padding: 30px 0 30px 0 !important;
+  }
+
+  .about-image {
+    padding: 30px 0 30px 0 !important;
+  }
+
+  .about {
+    padding-top: 6rem;
+  }
+}

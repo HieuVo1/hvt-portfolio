@@ -61,15 +61,21 @@ strong {
   margin-left: 15px;
 }
 
-.education .education-logo {
+.experiences,
+.educations {
+  flex-direction: column;
+  align-items: start;
+}
+
+.educations .educations-logo {
   position: absolute;
 }
 
-.education .major {
+.educations .major {
   font-size: 18px;
   font-weight: bold;
 }
 
-.education .timeline-info {
+.educations .timeline-info {
   margin-left: 7em;
 }

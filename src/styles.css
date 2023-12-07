@@ -4,6 +4,7 @@
 @import "../node_modules/ng-zorro-antd/button/style/index.min.css";
 @import "../node_modules/ng-zorro-antd/input/style/index.min.css";
 @import "../node_modules/ng-zorro-antd/form/style/index.min.css";
+@import "../node_modules/ng-zorro-antd/drawer/style/index.min.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
 
@@ -25,6 +26,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -87,7 +89,7 @@ ul {
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .section-title {
@@ -98,23 +100,62 @@ ul {
   font-weight: bold;
 }
 
-@media (min-width: 1200px) {
+/* drawer */
+.ant-drawer-body {
+  padding: 0;
+}
+
+.menu-mobile .ant-drawer-body ul li {
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+  outline: none;
+  transition: 0.7s;
+}
+
+.menu-mobile .ant-drawer-body ul li:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+.ant-drawer-title div {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.ant-drawer-close i {
+  transform: rotate(0);
+  transition: 0.5s;
+}
+
+.ant-drawer-close i:hover {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 992px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 768px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 600px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 }

@@ -1,0 +1,13 @@
+<nz-drawer [nzWidth]="300" [nzClosable]="true" [nzVisible]="isVisible" nzPlacement="left" nzTitle="Menu"
+  (nzOnClose)="closeMenu()" [nzWrapClassName]="'menu-mobile'">
+  <ng-container *nzDrawerContent>
+    <ul>
+      <li (click)="scrollTo('about')">About</li>
+      <li (click)="scrollTo('skills')">Skills</li>
+      <li (click)="scrollTo('projects')">Projects</li>
+      <li (click)="scrollTo('resume')">Resume</li>
+      <li (click)="scrollTo('certificates')">Certificates</li>
+      <li (click)="scrollTo('contact')">Contact</li>
+    </ul>
+  </ng-container>
+</nz-drawer>
