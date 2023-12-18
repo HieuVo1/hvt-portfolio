@@ -19,6 +19,8 @@ export class SkillsComponent {
     'Microservices',
     'RabbitMQ',
     'Azure Service Bus',
+    'AWS SNS',
+    'AWS SQS',
     'Redis',
     'Git',
     'CI/CD',

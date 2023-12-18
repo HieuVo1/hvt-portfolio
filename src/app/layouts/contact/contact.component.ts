@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -27,11 +26,11 @@ export class ContactComponent {
   }
 
   submitForm() {
-    this.checkInput();
-    const value = this.contactForm.value;
-    if (this.contactForm.valid) {
-      this.isLoading = true;
 
+    this.checkInput();
+    if (this.contactForm.valid) {
+
+      this.contactForm.reset();
     }
   }
 
