@@ -3,12 +3,18 @@ import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
 
 import {
   DownloadOutline,
-  UserOutline
+  UserOutline,
+  SearchOutline,
+  AudioOutline,
+  MessageOutline
 } from '@ant-design/icons-angular/icons';
 
 const icons = [
   DownloadOutline,
-  UserOutline
+  UserOutline,
+  SearchOutline,
+  AudioOutline,
+  MessageOutline
 ];
 
 @NgModule({

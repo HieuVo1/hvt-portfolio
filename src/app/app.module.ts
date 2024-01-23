@@ -22,11 +22,13 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { ProjectsComponent } from './layouts/projects/projects.component';
 import { ResumeComponent } from './layouts/resume/resume.component';
 import { ContactComponent } from './layouts/contact/contact.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { MenuDrawerComponent } from './layouts/menu-drawer/menu-drawer.component';
+import { MessageComponent } from './layouts/message/message.component';
 
 registerLocaleData(en);
 
@@ -42,7 +44,8 @@ registerLocaleData(en);
     ResumeComponent,
     ContactComponent,
     FooterComponent,
-    MenuDrawerComponent
+    MenuDrawerComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ registerLocaleData(en);
     NzFormModule,
     NzInputModule,
     NzDrawerModule,
+    NzBadgeModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],

@@ -6,14 +6,18 @@ import { Subject } from 'rxjs/internal/Subject';
 })
 export class DrawerService {
   private menuDrawerVisible = new Subject<boolean>();
-  private closeMenuDrawer = new Subject<boolean>();
+  private chatVisible = new Subject<boolean>();
 
   menuDrawerVisibleEmitted$ = this.menuDrawerVisible.asObservable();
+  chatVisibleEmitted$ = this.chatVisible.asObservable();
 
   constructor() { }
 
   menuDrawerVisibleEvent(isVisible: boolean) {
-    console.log(isVisible);
     this.menuDrawerVisible.next(isVisible);
+  }
+
+  chatVisibleEvent(isVisible: boolean) {
+    this.chatVisible.next(isVisible);
   }
 }

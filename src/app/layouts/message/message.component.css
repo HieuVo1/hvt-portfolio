@@ -1,0 +1,43 @@
+.message-btn {
+  height: 45px;
+  width: 45px;
+}
+
+.message-icon {
+  position: fixed;
+  right: 115px;
+  bottom: 40px;
+  z-index: 1000;
+}
+
+.message-icon ::ng-deep .ant-badge .ant-badge-count {
+  top: 5px;
+  right: 2px;
+}
+
+.message-btn i {
+  color: #868991;
+}
+
+.message-frame {
+  z-index: 1000;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  right: 160px;
+  bottom: 63px;
+  background: white;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 0 7px 0 #999;
+  transition: 0.2s;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.message-frame.show {
+  width: 400px;
+  height: 500px;
+  bottom: 0;
+  right: 180px;
+  opacity: 1;
+}

@@ -40,4 +40,7 @@ export class ContactComponent {
       this.contactForm.controls[i].updateValueAndValidity();
     }
   }
+
+
+
 }

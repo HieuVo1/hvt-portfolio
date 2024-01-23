@@ -1,0 +1,12 @@
+<div class="message-icon">
+  <nz-badge [nzCount]="numMessageUnRead">
+    <button class="message-btn text-hover " (click)="isShowMessagesFrame = !isShowMessagesFrame" nz-button
+      nzShape="circle"><i nz-icon nzType="message" nzTheme="outline"></i></button>
+  </nz-badge>
+</div>
+
+<div [class.show]="isShowMessagesFrame" class="message-frame">
+  <iframe
+    src='https://webchat.botframework.com/embed/a-demo-231220?s=E1DH5cozA8Y._ufvzeDtS6rwLMCJJzap_e6mSDnGQCwqtS8aBPshvDM'
+    style=' width: 100%; height: 100%; border:none;'></iframe>
+</div>
