@@ -79,3 +79,28 @@
   grid-template-columns: repeat(5, 1fr);
   margin: 0 0px 64px;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skill-group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
