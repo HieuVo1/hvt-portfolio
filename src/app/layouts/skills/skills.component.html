@@ -1,8 +1,14 @@
 <section class="section skills " id="skills">
   <div class="container">
     <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li *ngFor="let skill of skills" class="skills-list-item btn btn--plain">{{skill}}</li>
+    <ul class="skill-group">
+      <!-- <li *ngFor="let skill of skills" class="skills-list-item btn btn--plain">{{skill}}</li> -->
+      <div *ngFor="let skill of skills" class="leafygreen-ui">
+        <img [src]="skill.imageUrl" width="24px" height="24px">
+        <div>
+          <p>{{skill.name}}</p>
+        </div>
+      </div>
     </ul>
   </div>
 </section>

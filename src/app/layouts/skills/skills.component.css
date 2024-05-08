@@ -34,3 +34,48 @@
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
 }
+
+.leafygreen-ui {
+  position: relative;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  transition-property: border, box-shadow;
+  border: 1px solid #E8EDEB;
+  box-shadow: 0 4px 10px -4px rgba(0, 30, 43, 0.3);
+  background-color: white;
+  color: #1C2D38;
+  border-radius: 24px;
+  font-family: 'Euclid Circular A', Akzidenz, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 24px;
+  min-height: 68px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 16px 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.leafygreen-ui p {
+  margin: 0 0 0 18px;
+  font-weight: 400;
+}
+
+.skill-group {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: grid;
+  grid-column: 1 / -1 !important;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 0px 64px;
+}
