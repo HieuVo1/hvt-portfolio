@@ -21,7 +21,7 @@ export class ProjectsComponent {
       repoLink: "https://github.com/HieuVo1/hvt-portfolio"
     },
     {
-      name: "eShopContainer",
+      name: "eShopicaContainer",
       description: "🤖 Microservices project follow by NET-Microservices-Architecture-for-Containerized-NET-Applications Document.",
       technologies: ['.NET', 'Docker', 'RabbitMQ', 'Azure Service Bus'],
       repoLink: "https://github.com/HieuVo1/eShopContainer"
@@ -33,10 +33,10 @@ export class ProjectsComponent {
       repoLink: "https://github.com/HieuVo1/Azure-AI"
     },
     {
-      name: "shopica-message",
-      description: "📍A Real-time message system can integrate in any systems.",
-      technologies: ['.NET', 'SignalR', 'EF Core', 'MySQL'],
-      repoLink: "https://github.com/HieuVo1/shopica-message"
+      name: "shopica-client",
+      description: "📍A eCommerce website for clothing using Github Actions deploy to AWS S3.",
+      technologies: ['Angular', 'Ng-Zorro', '.NET', 'SQLServer', 'AWS'],
+      repoLink: "https://shopica-client.hvtauthor.com/"
     },
     {
       name: "shopica-recommender-system",

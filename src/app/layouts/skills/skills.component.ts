@@ -74,7 +74,7 @@ export class SkillsComponent {
     },
     {
       name: 'Miroservies',
-      imageUrl: 'assets/images/skills/microservices.png'
+      imageUrl: 'assets/images/skills/icon-microservices.png'
     },
     {
       name: 'Git',
@@ -83,6 +83,10 @@ export class SkillsComponent {
     {
       name: 'Figma',
       imageUrl: 'assets/images/skills/figma-icon.svg'
+    },
+    {
+      name: 'Business Central',
+      imageUrl: 'assets/images/skills/business-central-logo.png'
     },
   ]
 }
