@@ -24,7 +24,7 @@ export class ProjectsComponent {
       name: "eShopicaContainer",
       description: "🤖 Microservices project follow by NET-Microservices-Architecture-for-Containerized-NET-Applications Document.",
       technologies: ['.NET', 'Docker', 'RabbitMQ', 'Azure Service Bus'],
-      repoLink: "https://github.com/HieuVo1/eShopContainer"
+      repoLink: "https://shopica-api.hvtauthor.com/healthchecks-ui"
     },
     {
       name: "Azure-AI",
