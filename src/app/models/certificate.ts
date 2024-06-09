@@ -3,4 +3,5 @@ export interface Certificate {
   description: string;
   tags: string[],
   image: string;
+  certificateUrl: string;
 }

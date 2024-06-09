@@ -9,6 +9,12 @@ import { Project } from 'src/app/models/project';
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      name: "eShopicaOnContainer",
+      description: "🤖 Microservices project follow by NET-Microservices-Architecture-for-Containerized-NET-Applications Document.",
+      technologies: ['.NET', 'Docker', 'RabbitMQ', 'Azure Service Bus'],
+      repoLink: "https://dev.azure.com/shopica/_git/ShopicaOnContainer"
+    },
+    {
       name: "CI/CD-Movie",
       description: "🚀 Using Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.",
       technologies: ['React', 'TypeScript', 'Flask', 'Python', 'Kubernetes'],
@@ -20,12 +26,7 @@ export class ProjectsComponent {
       technologies: ['Angular', 'Ng-Zorro', 'TypeScript', 'CI/CD', 'AWS S3'],
       repoLink: "https://github.com/HieuVo1/hvt-portfolio"
     },
-    {
-      name: "eShopicaContainer",
-      description: "🤖 Microservices project follow by NET-Microservices-Architecture-for-Containerized-NET-Applications Document.",
-      technologies: ['.NET', 'Docker', 'RabbitMQ', 'Azure Service Bus'],
-      repoLink: "https://shopica-api.hvtauthor.com/healthchecks-ui"
-    },
+
     {
       name: "Azure-AI",
       description: "🎉 Research project with Azure AI Services like Document Intelligence, Speech-to-text,Translation,...",

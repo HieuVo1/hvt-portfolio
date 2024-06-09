@@ -4,9 +4,10 @@
     <div class="achievement-cards-div">
       <owl-carousel-o [options]="customOptions">
         <ng-template class="certificate-card" carouselSlide *ngFor="let certificate of certificates">
-          <div class="certificate-image-div"><img [src]="certificate.image" alt="Azure Fundamentals Logo"
-              class="card-image"></div>
-          <div class="certificate-detail-div">
+          <div class=" certificate-image-div"><img [src]="certificate.image" alt="Azure Fundamentals Logo"
+              class="card-image">
+          </div>
+          <div class="certificate-detail-div" (click)="goToLink(certificate.certificateUrl)">
             <h5 class="card-title">{{certificate.name}}</h5>
             <p class="card-subtitle">{{certificate.description}}</p>
           </div>
